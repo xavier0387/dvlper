@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Tours | ETUR - Guayaquil</title>
+    <link rel="stylesheet" href="../css/style.css"> 
+    <link rel="stylesheet" href="../css/tours-catalog.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">ETUR</div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../index.html" data-lang="nav-home">Inicio</a></li>
+                <li><a href="tours.html" class="active" data-lang="nav-tours">Tours</a></li>
+                <li><a href="reviews.html" data-lang="nav-reviews">Reseñas</a></li>
+                <li><a href="contacto.html" data-lang="nav-contact">Contacto</a></li>
+            </ul>
+        </nav>
+        
+        <div class="lang-switcher">
+            <span class="lang-active">ES</span> 
+            <a href="#" onclick="switchLanguage('en'); return false;">EN</a> 
+            <a href="#" onclick="switchLanguage('fr'); return false;">FR</a> 
+            <a href="#" onclick="switchLanguage('de'); return false;">DE</a>
+        </div>
+    </header>
+
+    <main class="tours-main">
+        
+        <aside class="filters-sidebar">
+            <h2><i class="fas fa-filter"></i> Filtrar Tours</h2>
+            
+            <div class="filter-group">
+                <h3>Tipo de Tour</h3>
+                <label><input type="checkbox" name="type" value="city"> City Tours</label>
+                <label><input type="checkbox" name="type" value="nature"> Naturaleza y Safari</label>
+                <label><input type="checkbox" name="type" value="history"> Histórico/Cultural</label>
+                <label><input type="checkbox" name="type" value="gastronomy"> Gastronomía</label>
+            </div>
+
+            <div class="filter-group">
+                <h3>Duración</h3>
+                <label><input type="radio" name="duration" value="half-day"> Medio Día (Hasta 4h)</label>
+                <label><input type="radio" name="duration" value="full-day"> Día Completo</label>
+                <label><input type="radio" name="duration" value="multi-day"> Multi-Día</label>
+            </div>
+
+            <button class="cta-button filter-apply-btn">Aplicar Filtros</button>
+            <button class="filter-clear-btn">Limpiar Filtros</button>
+        </aside>
+
+        <section class="tour-results">
+            <h1>Explora Todas Nuestras Experiencias en Guayaquil</h1>
+            <p class="result-summary">Mostrando 6 de 6 tours disponibles.</p>
+
+            <div class="tour-list-grid">
+                
+                <article class="tour-item card-shadow" data-type="city" data-duration="half-day">
+                    <img src="../img/las-penas.jpg" alt="Barrio Las Peñas Guayaquil">
+                    <div class="item-content">
+                        <h2>City Tour Guayaquil: Las Peñas</h2>
+                        <p class="tour-summary">Recorrido por el corazón histórico y cultural, incluyendo el Malecón 2000 y el faro.</p>
+                        <div class="tour-meta">
+                            <span><i class="fas fa-clock"></i> 4 Horas</span>
+                            <span><i class="fas fa-user-friends"></i> Grupo Pequeño</span>
+                        </div>
+                        <div class="item-footer">
+                            <div class="price-box">
+                                <span class="price-from" data-lang="tour-price-from">Desde</span>
+                                <span class="price-value">$35 USD</span>
+                            </div>
+                            <a href="tours-detalle/city-tour-guayaquil.html" class="cta-button" data-lang="tour-details-link">Ver Detalles</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tour-item card-shadow" data-type="nature" data-duration="full-day">
+                    <img src="../img/parque-historico.jpg" alt="Parque Histórico Guayaquil">
+                    <div class="item-content">
+                        <h2>Aventura en el Parque Histórico</h2>
+                        <p class="tour-summary">Encuentro con la fauna de Guayaquil (monos, perezosos) y réplicas de arquitectura colonial.</p>
+                        <div class="tour-meta">
+                            <span><i class="fas fa-clock"></i> 8 Horas</span>
+                            <span><i class="fas fa-utensils"></i> Incluye Almuerzo</span>
+                        </div>
+                        <div class="item-footer">
+                            <div class="price-box">
+                                <span class="price-from" data-lang="tour-price-from">Desde</span>
+                                <span class="price-value">$55 USD</span>
+                            </div>
+                            <a href="tours-detalle/parque-historico.html" class="cta-button" data-lang="tour-details-link">Ver Detalles</a>
+                        </div>
+                    </div>
+                </article>
+                
+                </div>
+        </section>
+
+    </main>
+    
+    <footer class="main-footer">
+        <p>© 2025 ETUR - Agencia de Viajes Guayaquil. Todos los derechos reservados.</p>
+        <div class="footer-links">
+            <a href="#">Política de Privacidad</a> | 
+            <a href="#">Términos y Condiciones</a>
+        </div>
+    </footer>
+
+    <script src="../js/lang.js"></script>
+    </body>
+</html>

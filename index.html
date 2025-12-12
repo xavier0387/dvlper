@@ -12,28 +12,28 @@
     <header class="main-header">
         <div class="logo">ETUR</div>
         <nav class="main-nav">
-            <ul>
-                <li><a href="/es/index.html" class="active">Inicio</a></li>
-                <li><a href="/es/tours.html">Tours</a></li>
-                <li><a href="/es/reviews.html">Reseñas</a></li>
-                <li><a href="/es/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+    <ul>
+        <li><a href="/es/index.html" class="active" data-lang="nav-home">Inicio</a></li>
+        <li><a href="/es/tours.html" data-lang="nav-tours">Tours</a></li>
+        <li><a href="/es/reviews.html" data-lang="nav-reviews">Reseñas</a></li>
+        <li><a href="/es/contacto.html" data-lang="nav-contact">Contacto</a></li>
+    </ul>
+</nav>
         
-        <div class="lang-switcher">
-            <a href="#" class="lang-active">ES</a>
-            <a href="/en/index.html">EN</a>
-            <a href="/fr/index.html">FR</a>
-            <a href="/de/index.html">DE</a>
+      <div class="lang-switcher">
+            <span class="lang-active">ES</span> 
+        <a href="#" onclick="switchLanguage('en'); return false;">EN</a> 
+        <a href="#" onclick="switchLanguage('fr'); return false;">FR</a> 
+        <a href="#" onclick="switchLanguage('de'); return false;">DE</a>
         </div>
     </header>
 
     <section class="hero-section">
         <div class="hero-content">
-            <h1>Descubre el Corazón Vibrante de Guayaquil con ETUR</h1>
-            <p>Somos tu operador de confianza para tours inolvidables en el Malecón, Las Peñas y la región costera.</p>
-            <a href="/es/tours.html" class="cta-button">Ver Todos los Tours</a>
-        </div>
+    <h1 data-lang="hero-title">Descubre el Corazón Vibrante de Guayaquil con ETUR</h1>
+    <p data-lang="hero-tagline">Somos tu operador de confianza...</p>
+    <a href="/es/tours.html" class="cta-button" data-lang="cta-all-tours">Ver Todos los Tours</a>
+</div>
     </section>
 
     <section class="featured-tours">
